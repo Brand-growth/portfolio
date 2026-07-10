@@ -380,8 +380,7 @@ footer{padding:70px 32px 40px;border-top:1px solid var(--line);margin-top:90px}
       <div class="cta-block" style="max-width:300px">
         <img class="cta-profile" src="image/profile.jpg" alt="Profile" onerror="this.style.display='none'">
         <a href="#about" class="cta-link">私について →</a>
-        <div class="cta-heading" style="margin-top:34px;font-size:22px">Instagram ↗</div>
-        <div class="insta-thumbs" id="instaThumbs"></div>
+        <a href="https://www.instagram.com/marketing_urawaza/" class="cta-link" style="margin-top:34px;font-size:22px" target="_blank" rel="noopener">Instagram ↗</a>
       </div>
     </div>
   </div>
@@ -500,8 +499,6 @@ document.getElementById("tagsHead").onclick=()=>bar.classList.toggle("open");
 
 /* ===== CTA サムネ ===== */
 document.getElementById("ctaThumbs").innerHTML=works.slice(0,4).map(w=>
-  `<div class="t" style="background:linear-gradient(150deg,${w.col[0]},${w.col[1]})"><img src="${w.img}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:4px" onerror="this.remove()"></div>`).join("");
-document.getElementById("instaThumbs").innerHTML=works.slice(0,9).map(w=>
   `<div class="t" style="background:linear-gradient(150deg,${w.col[0]},${w.col[1]})"><img src="${w.img}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:4px" onerror="this.remove()"></div>`).join("");
 
 /* ===== モーダル ===== */
